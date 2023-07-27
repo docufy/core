@@ -1,0 +1,40 @@
+{
+  "name": "@docufy/core",
+  "description": "Docufy is a geius static site generator.",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "type": "module",
+  "homepage": "https://github.com/docufy",
+  "author": {
+    "name": "Emad Malekpour",
+    "email": "prodemmi@gmail.com",
+    "url": "https://prodemmi.netlify.app"
+  },
+  "keywords": [],
+  "scripts": {
+    "lint": "eslint cli/ --ext .ts,.tsx --fix --ignore-path .gitignore",
+    "format": "prettier --write src/**/*",
+    "prebuild": "rm -rf dist",
+    "build": "rimraf dist && tsc",
+    "docufy": "node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.195",
+    "@types/pug": "^2.0.6",
+    "@types/yargs": "^17.0.24",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "eslint": "^8.45.0",
+    "lodash": "^4.17.21",
+    "prettier": "^3.0.0",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.6",
+    "designs": "workspace:*",
+    "theme-builder": "workspace:*"
+  },
+  "dependencies": {
+    "@types/node": "^20.4.2",
+    "pug": "^3.0.2",
+    "yargs": "^17.7.2"
+  }
+}

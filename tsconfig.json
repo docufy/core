@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outFile": "dist/index.js",
+    "declaration": true,
+    "sourceMap": true,
+    "target": "esnext",
+    "module": "AMD",
+    "moduleResolution": "node",
+    "newLine": "LF",
+    "strict": true,
+
+    "allowJs": true,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+
+    "noUnusedLocals": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": false,
+    "esModuleInterop": true,
+    "removeComments": false,
+    "jsx": "preserve",
+    "lib": ["esnext", "dom"],
+    "types": ["node"],
+    "paths": {
+      "theme-builder": ["packages/theme-builder/src"],
+      "designs": ["packages/designs/src"],
+    }
+  },
+  "include": ["src", "packages/theme-builder/src"],
+  "exclude": ["packages/designs/**/*"]
+}

@@ -1,32 +1,25 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "outFile": "dist/index.js",
+    "incremental": true,
+    "target": "es2022",
+    "module": "commonjs",
     "declaration": true,
-    "sourceMap": true,
-    "target": "esnext",
-    "module": "AMD",
-    "moduleResolution": "node",
-    "newLine": "LF",
     "strict": true,
-
-    "allowJs": true,
-    "noImplicitAny": false,
-    "noImplicitThis": false,
-
-    "noUnusedLocals": true,
-    "experimentalDecorators": true,
-    "resolveJsonModule": false,
+    "moduleResolution": "node",
     "esModuleInterop": true,
-    "removeComments": false,
-    "jsx": "preserve",
-    "lib": ["esnext", "dom"],
-    "types": ["node"],
-    "paths": {
-      "theme-builder": ["packages/theme-builder/src"],
-      "designs": ["packages/designs/src"],
-    }
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "rootDir": "./src",
+    "outDir": "./build"
   },
-  "include": ["src", "packages/theme-builder/src"],
-  "exclude": ["packages/designs/**/*"]
+  "files": [
+  ],
+  "references": [
+    {
+      "path": "./packages/core"
+    },
+    {
+      "path": "./packages/theme-builder"
+    }
+  ]
 }

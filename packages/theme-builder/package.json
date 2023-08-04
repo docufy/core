@@ -1,10 +1,10 @@
 {
-  "name": "theme-builder",
+  "name": "@docufy/theme-builder",
   "version": "1.0.0",
-  "private": true,
-  "type": "module",
-  "description": "theme-builder",
-  "scripts": {},
-  "author": "",
-  "license": "ISC"
+  "description": "The package containing building and using default theme",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "tsc --build"
+  }
 }

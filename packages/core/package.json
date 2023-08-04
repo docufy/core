@@ -1,0 +1,16 @@
+{
+  "name": "@docufy/core",
+  "version": "1.0.0",
+  "description": "The package containing core of docufy",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "tsc --build"
+  },
+  "dependencies": {
+    "@docufy/theme-builder": "^1.0.0"
+  },
+  "bin": {
+    "docufy": "./bin/docufy"
+  }
+}
